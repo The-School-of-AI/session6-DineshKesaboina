@@ -35,7 +35,7 @@ set1 = [('4', 'diamonds'), ('8', 'clubs'), ('7', 'hearts'),('6', 'diamonds'), ('
 set2 = [('9', 'clubs'), ('5', 'diamonds'), ('6', 'hearts'),('7', 'clubs'), ('8', 'spades')]
 
 ```
-This should return player1 (holding set1) as the winner. These sort of comparison functions were implemented and tested for all three game modes.
+This should return player2 (holding set2) as the winner. These sort of comparison functions were implemented and tested for all three game modes.
 
 Finally, all functions are well documented with a docstring that gives a short description of the function as well as mentions the type of input and type of return value. Annotations were implemented for function 3 (```card_game```) as was required by the task. 
 
