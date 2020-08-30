@@ -61,7 +61,7 @@ def card_game(card_set1: 'a tuple of tuples or list of lists',
     if game_mode.lower() == 'poker':
         length_condition = (len(card_set1) == 5) and (len(card_set2) == 5)
         if length_condition:
-            returned = poker(card_set1, card_set2)
+            returned = play(card_set1, card_set2, game_mode)
             return returned
         else:
             raise ValueError("Poker requires 5 cards for both players!")
@@ -69,7 +69,7 @@ def card_game(card_set1: 'a tuple of tuples or list of lists',
     elif game_mode.lower() == 'four card':
         length_condition = (len(card_set1) == 4) and (len(card_set2) == 4)
         if length_condition:
-            returned = four_card(card_set1, card_set2)
+            returned = play(card_set1, card_set2, game_mode)
             return returned
         else:
             raise ValueError("Four card requires 4 cards for both players!")
@@ -77,7 +77,8 @@ def card_game(card_set1: 'a tuple of tuples or list of lists',
     elif game_mode.lower() == 'three card':
         length_condition = (len(card_set1) == 3) and (len(card_set2) == 3)
         if length_condition:
-            returned = three_card(card_set1, card_set2)
+            returned = play(card_set1, card_set2, game_mode)
             return returned
         else:
             raise ValueError("Three card requires 3 cards for both players!")
+
