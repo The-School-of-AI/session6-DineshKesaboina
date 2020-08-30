@@ -14,7 +14,7 @@ Docstrings must, and it must mention what the function is doing (2, 3) - 50
 * Submit Github link with all test files and github actions in place. 
 
 ## Solution
-More than 20 functions and 50 tests were written to make sure that poker hierarchy was implemented correctly. 
+More than 20 functions and 70 tests were written to make sure that poker hierarchy was implemented correctly. 
 
 ### Design choices
 Since 4 card and 3 card games do not have preset rules, some liberties were taken while designing these functions. 
